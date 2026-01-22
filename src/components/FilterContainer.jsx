@@ -5,52 +5,52 @@ export default function FilterContainer() {
     <div className="filter-container">
       <h2 className="filters-title">Filters</h2>
       <Link href={`/`}>
-        <p>All Categories</p>
+        <p className="filter-tag">All Categories</p>
       </Link>
       <Link href={`/posts/Art`}>
-        <p>Art</p>
+        <p className="filter-tag">Art</p>
       </Link>
       <Link href={`/posts/Music`}>
-        <p>Music</p>
+        <p className="filter-tag">Music</p>
       </Link>
       <Link href={`/posts/Books`}>
-        <p>Books</p>
+        <p className="filter-tag">Books</p>
       </Link>
       <Link href={`/posts/Food`}>
-        <p>Food</p>
+        <p className="filter-tag">Food</p>
       </Link>
       <Link href={`/posts/Travel`}>
-        <p>Travel</p>
+        <p className="filter-tag">Travel</p>
       </Link>
       <Link href={`/posts/Photography`}>
-        <p>Photography</p>
+        <p className="filter-tag">Photography</p>
       </Link>
       <Link href={`/posts/Fitness`}>
-        <p>Fitness</p>
+        <p className="filter-tag">Fitness</p>
       </Link>
       <Link href={`/posts/Pets`}>
-        <p>Pets</p>
+        <p className="filter-tag">Pets</p>
       </Link>
       <Link href={`/posts/Adventure`}>
-        <p>Adventure</p>
+        <p className="filter-tag">Adventure</p>
       </Link>
       <Link href={`/posts/Tech`}>
-        <p>Technology</p>
+        <p className="filter-tag">Technology</p>
       </Link>
       <Link href={`/posts/Games`}>
-        <p>Games</p>
+        <p className="filter-tag">Games</p>
       </Link>
       <Link href={`/posts/Hobbies`}>
-        <p>Hobbies</p>
+        <p className="filter-tag">Hobbies</p>
       </Link>
       <Link href={`/posts/Education`}>
-        <p>Education</p>
+        <p className="filter-tag">Education</p>
       </Link>
       <Link href={`/posts/Wellness`}>
-        <p>Wellness</p>
+        <p className="filter-tag">Wellness</p>
       </Link>
       <Link href={`/posts/Entertainment`}>
-        <p>Entertainment</p>
+        <p className="filter-tag">Entertainment</p>
       </Link>
     </div>
   );

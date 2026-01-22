@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.534);
+  color: rgb(255, 255, 255);
 }
 
 /* Header */
@@ -16,11 +16,17 @@ h1 {
 
 .header {
   display: flex;
-  background-color: rgb(0, 132, 255);
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .header > nav > a {
@@ -39,6 +45,10 @@ body,
 #root {
   height: 100%;
   margin: 0;
+  background-image: url("../../public/ladning.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #root {
@@ -84,12 +94,18 @@ body {
 }
 
 .post-template {
-  background-color: rgb(0, 132, 255);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   width: 80%;
   padding: 20px;
   border-radius: 20px;
   margin: 10px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .post-template:hover {
@@ -98,10 +114,12 @@ body {
 
 option:hover {
   background-color: rgb(0, 132, 255);
+  border-radius: 20px;
 }
 
 a:hover {
   background-color: rgb(1, 100, 192);
+  border-radius: 20px;
 }
 
 .like-delete-container,
@@ -137,6 +155,15 @@ a:hover {
   align-items: center;
   grid-column-start: 1;
   margin: 20px;
+  border-radius: 20px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .filters-title {
@@ -148,15 +175,12 @@ a:hover {
   height: 90%;
 }
 
-#filter-select::-webkit-scrollbar {
-  display: none;
-}
-
-#filter-select > option {
+.filter-tag {
   margin: 5px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 20px;
   font-weight: bold;
+  font-size: 17px;
 }
 
 .posts-container {
@@ -170,4 +194,30 @@ a:hover {
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.like-delete-btn {
+  margin: 5px;
+  border-radius: 20px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.like-count {
+  margin: 5px;
+  border-radius: 20px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
