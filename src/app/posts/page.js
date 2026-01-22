@@ -1,4 +1,4 @@
-export default function postdetailspage() {
+export default function posts() {
   return (
     <>
       <h1>Test</h1>
