@@ -6,7 +6,7 @@ export default async function ShowAllPosts({ searchParams }) {
   const sortOrder = params?.sort === "asc" ? "ASC" : "DESC";
 
   const { rows } = await db.query(
-    `SELECT * FROM week7posts ORDER BY id ${sortOrder}`,
+    `SELECT * FROM week7posts ORDER BY creator ${sortOrder}`,
   );
 
   return (
