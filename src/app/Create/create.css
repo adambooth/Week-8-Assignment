@@ -8,13 +8,13 @@
 }
 
 .form-wrapper {
-  background-color: lightblue;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  background-color: #0084ff;
 }
 
 .form-header {
@@ -38,10 +38,11 @@ input,
 select {
   background-color: white;
   padding: 10px;
+  border-radius: 20px;
 }
 
 .submit-button {
-  background-color: rgb(0, 132, 255);
+  background-color: white;
   padding: 10px 15px 10px 15px;
   border-radius: 20px;
 }
@@ -55,9 +56,5 @@ select {
   overflow-wrap: break-word;
   white-space: pre-wrap;
   background-color: white;
-}
-
-.body-class {
-  min-height: 100vh;
-  display: flex;
+  border-radius: 20px;
 }

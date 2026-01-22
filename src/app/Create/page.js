@@ -1,6 +1,35 @@
 import "../Create/create.css";
 
+import { db } from "@/utils/.dbConnection";
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+
 export default function CreatePostPage() {
+  async function handleSubmit(formData) {
+    "use server";
+
+    const formValues = {
+      creator: formData.get("creator"),
+      description: formData.get("description"),
+      category: formData.get("category"),
+      likecount: 0,
+    };
+
+    await db.query(
+      `INSERT INTO week7posts (creator, description, category, likecount) VALUES ($1, $2, $3, $4)`,
+      [
+        formValues.creator,
+        formValues.description,
+        formValues.category,
+        formValues.likecount,
+      ],
+    );
+
+    revalidatePath("/");
+
+    redirect("/");
+  }
+
   return (
     <>
       <div className="main-form-container">
@@ -9,9 +38,9 @@ export default function CreatePostPage() {
             <h2>Create A Post</h2>
           </div>
 
-          <form className="form-content">
+          <form action={handleSubmit} className="form-content">
             <div className="form-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="creator">Name : {""}</label>
               <input
                 id="creator"
                 type="text"
@@ -22,7 +51,7 @@ export default function CreatePostPage() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="description">Description</label>
+              <label htmlFor="description">Description : {""}</label>
               <textarea
                 id="description"
                 type="text"
