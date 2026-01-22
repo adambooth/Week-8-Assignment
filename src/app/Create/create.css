@@ -70,8 +70,8 @@ select {
 }
 
 #description {
-  width: 400px;
-  height: 150px;
+  max-width: 400px;
+  max-height: 150px;
   padding: 10px;
   font-size: 16px;
   resize: vertical;
@@ -86,4 +86,14 @@ select {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  .form-wrapper {
+    margin: 5px;
+    padding: 5px;
+  }
+  form {
+    margin: 5px;
+  }
 }

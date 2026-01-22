@@ -7,6 +7,14 @@
   grid-column-end: 3;
 }
 
+.main {
+  flex: 1;
+}
+
+.body-class {
+  min-height: 100vh;
+}
+
 .post-details-container {
   display: flex;
   justify-content: center;
@@ -188,4 +196,27 @@ textarea {
 .like-delete-btn:hover {
   background-color: rgb(1, 100, 192);
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .main-post-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .post-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  #footer {
+    position: absolute; /* take it out of normal flow */
+    left: -9999px; /* move far to the left */
+  }
 }
