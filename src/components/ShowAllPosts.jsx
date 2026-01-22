@@ -24,25 +24,6 @@ export default async function ShowAllPosts() {
                 <p className="post-category post-content">
                   Category: {posts.category}
                 </p>
-                <div className="like-delete-container">
-                  <p className="likecount"> Likes : {posts.likecount}</p>
-                  <button className="like-delete-btn">
-                    <img
-                      width="50"
-                      height="50"
-                      src="https://img.icons8.com/pastel-glyph/64/facebook-like--v1.png"
-                      alt="facebook-like--v1"
-                    />
-                  </button>
-                  <button className="like-delete-btn">
-                    <img
-                      width="50"
-                      height="50"
-                      src="https://img.icons8.com/carbon-copy/50/filled-trash.png"
-                      alt="filled-trash"
-                    />
-                  </button>
-                </div>
               </Link>
             </div>
           );
