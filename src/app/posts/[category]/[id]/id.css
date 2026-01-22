@@ -124,6 +124,9 @@ textarea {
   border-right: 2px solid rgba(255, 255, 255, 0.2);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .specific-form-group {
@@ -140,6 +143,8 @@ textarea {
   border: 2px solid rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #creator {
@@ -154,6 +159,25 @@ textarea {
   border-right: 2px solid rgba(255, 255, 255, 0.2);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.specific-submit-button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.specific-submit-button:hover {
+  background-color: rgb(1, 100, 192);
+  cursor: pointer;
 }
 
 .submit-button:hover {

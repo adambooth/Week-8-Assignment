@@ -107,7 +107,7 @@ export default async function posts({ params }) {
                 </div>
 
                 <br />
-                <button type="submit" className="submit-button">
+                <button type="submit" className="specific-submit-button">
                   Submit
                 </button>
               </form>

@@ -108,6 +108,11 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+option {
+  color: rgb(0, 0, 0);
+  background-color: rgb(155, 144, 144);
+}
+
 .post-template:hover {
   background-color: rgb(1, 100, 192);
 }
