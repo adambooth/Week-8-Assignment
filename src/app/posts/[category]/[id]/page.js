@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import "./id.css";
 
 export default async function posts({ params }) {
-  const { id, category } = await params;
+  const { id } = await params;
 
   const { rows } = await db.query(`SELECT * FROM week7posts WHERE id = $1`, [
     id,
@@ -63,6 +63,11 @@ export default async function posts({ params }) {
     redirect(`/posts/category/${id}`);
   }
 
+  async function redirectEditPage(commentId) {
+    "use server";
+    redirect(`/posts/category/${id}/edit/${commentId}`);
+  }
+
   return (
     <>
       <div className="main-post-container">
@@ -75,7 +80,15 @@ export default async function posts({ params }) {
               <ul>
                 {comments.map((comments) => (
                   <li className="comment" key={comments.generatedid}>
-                    <strong>{comments.name}:</strong> {comments.comment}
+                    <strong>
+                      {comments.name}: {comments.comment}
+                    </strong>
+                    <a
+                      href={`/posts/category/${id}/edit/${comments.generatedid}`}
+                      className="edit-btn"
+                    >
+                      Edit
+                    </a>
                   </li>
                 ))}
               </ul>

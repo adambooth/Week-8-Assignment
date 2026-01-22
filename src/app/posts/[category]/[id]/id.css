@@ -103,6 +103,8 @@ textarea {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .like-count {
@@ -196,6 +198,24 @@ textarea {
 .like-delete-btn:hover {
   background-color: rgb(1, 100, 192);
   cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: rgb(1, 100, 192);
+  cursor: pointer;
+}
+
+.edit-btn {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 5px;
 }
 
 @media (max-width: 700px) {
