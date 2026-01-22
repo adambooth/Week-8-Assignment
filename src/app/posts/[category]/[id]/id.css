@@ -76,8 +76,11 @@ textarea {
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-right: 2px solid rgba(255, 255, 255, 0.2);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
+
+  height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .comment {
