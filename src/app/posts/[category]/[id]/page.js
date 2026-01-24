@@ -75,7 +75,7 @@ export default async function posts({ params }) {
           {" "}
           <div className="specific-post-content">
             <h1>Name : {post.creator}</h1>
-            <h1>Description : {post.description}</h1>
+            <h1 className="post-desc">Description : {post.description}</h1>
             <div className="specific-comments-container">
               <ul>
                 {comments.map((comments) => (
@@ -123,6 +123,9 @@ export default async function posts({ params }) {
                 <button type="submit" className="specific-submit-button">
                   Submit
                 </button>
+                <a href={`/posts/category/${id}/edit/`} className="edit-btn">
+                  Edit
+                </a>
               </form>
             </div>
             <p className="like-count"> Likes : {post.likecount}</p>
